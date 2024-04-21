@@ -1,6 +1,6 @@
-NAME = ex02
+NAME = ex03
 
-SRCS = main.cpp
+SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJS := $(SRCS:%.cpp=%.o)
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
