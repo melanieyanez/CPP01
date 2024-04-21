@@ -6,7 +6,7 @@
 /*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 13:38:54 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/04/21 14:46:09 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/04/21 14:57:33 by melanieyane      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void		ft_replace(std::string &buffer, std::string const &s1, std::string const &
 	std::size_t s1_size = s1.size();
 	std::size_t s2_size = s2.size();
 
+	if (s1.empty())
+		return ;
 	while (i != std::string::npos){
 		i = buffer.find(s1, i);
 		if (i != std::string::npos){
